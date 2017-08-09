@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Where am I?</title>
+  <script src="myLoc.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvc0-tooj4FD51bXb09qJP3h6t_IsrzA&callback=initMap"
+  type="text/javascript"></script>
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style> 
+    
+  </head>
+<body>
+  <form>
+  	<input type="button" id="watch" value="Watch me">
+  	<input type="button" id="clearWatch" value="Clear watch">
+  </form>
+	<div id="location">
+		Your location will go here.
+	</div>
+	<div id="distance">
+		Distance from WickedlySmart HQ will go here.
+	</div>
+	<div id="map">
+	</div>
+</body>
+</html>
